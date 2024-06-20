@@ -4,7 +4,7 @@ variables:
 
 # Resource prefix for this environment
 - name:  'prefix'
-  value: 'mce2e'          # <===== CHANGE THIS! Must not be longer than 6 characters! Needs to be a unique prefix
+  value: 'punits'          # <===== CHANGE THIS! Must not be longer than 6 characters! Needs to be a unique prefix
 
 # Host-encryption for compute resources (needs to be enabled on subscription-level)
 # https://learn.microsoft.com/en-us/azure/virtual-machines/linux/disks-enable-host-based-encryption-cli
@@ -16,7 +16,7 @@ variables:
 # Check which regions are valid. There is a list in /src/infra/README.md
 # If you are planning to run Chaos Studio experiments, make sure the first region in the list does support Azure Chaos Studio. Not all regions do yet
 - name: 'stampLocations'
-  value: '["uksouth"]'
+  value: '["eastus"]'
 
 # Terraform state variables
 - name:  'terraformResourceGroup'
